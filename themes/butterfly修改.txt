@@ -1,0 +1,7 @@
+新增myimg文件夹
+
+在themes\Butterfly\layout\includes\widget文件夹新建card_pixiv.pug文件
+
+编辑themes\Butterfly\layout\includes\widget\index.pug文件
+
+编辑themes\Butterfly\languages\zh-CN.yml文件

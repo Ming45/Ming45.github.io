@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "hexo": "^7.2.0",
+    "hexo-bilibili-bangumi": "^1.8.9",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -25,6 +26,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
+    "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^1.0.0"
   }
 }

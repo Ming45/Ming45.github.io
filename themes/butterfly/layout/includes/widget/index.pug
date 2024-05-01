@@ -26,6 +26,8 @@
     .sticky_layout
       if showToc
         include ./card_post_toc.pug
+      if theme.aside.card_pixiv
+        include ./card_pixiv.pug
       !=partial('includes/widget/card_recent_post', {}, {cache: true})
       !=partial('includes/widget/card_ad', {}, {cache: true})
       !=partial('includes/widget/card_newest_comment', {}, {cache: true})

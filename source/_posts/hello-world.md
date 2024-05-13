@@ -1,7 +1,7 @@
 ---
 title: Hello World        # 标题
 tags: [hello]             # 标签
-categories:  hello word~  # 分类
+categories:  hello  # 分类
 description: hello word~  # 描述
 cover: /myimg/beautiful/whitecat.jpg   # 文章封面
 ---

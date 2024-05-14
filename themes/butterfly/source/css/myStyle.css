@@ -100,3 +100,16 @@
 	background: rgba(25, 25, 25, 0.9) !important;
 	color: #ffffff;
   }
+  
+  
+/*适配黑夜下首页分类磁贴*/
+/* 一般状态 */
+[data-theme="dark"] .magnet_link_context {
+  background: #1e1e1e;
+  color: antiquewhite;
+}
+/* 鼠标悬浮状态 */
+[data-theme="dark"] .magnet_link_context:hover {
+  background: #3ecdf1;
+  color: #f2f2f2;
+}

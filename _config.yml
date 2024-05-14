@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://ming45.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -138,3 +138,41 @@ cinema: # 追剧设置
 aplayer:
   meting: true
   asset_inject: false
+
+
+magnet:
+  enable: true
+  priority: 1
+  enable_page: /
+  type: categories
+  devide: 2
+  display:
+    - name: hello
+      display_name: 测试
+      icon: 📚
+    - name: hello
+      display_name: 测试
+      icon: 🎮
+    - name: 生活趣闻
+      display_name: 小冰の生活趣闻
+      icon: 🐱‍👓
+    - name: vue
+      display_name: 小冰の编程学习
+      icon: 👩‍💻
+    - name: 学习
+      display_name: 小冰の读书笔记
+      icon: 📒
+    - name: 随想
+      display_name: 小冰の胡思乱想
+      icon: 💡
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""

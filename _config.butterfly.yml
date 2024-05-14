@@ -1007,23 +1007,22 @@ CDN:
     # waline_js:
     
 
-# hexo-butterfly-categories-card
-# see https://akilar.top/posts/a9131002/
-categoryBar:
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
+  enable_page: all # 应用页面
+  timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
     name: recent-posts
     index: 0
-  column: odd # odd：3列 | even：4列
-  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
-  message:
-    - descr: hello
-      cover: /myimg/beautiful/whitecat.jpg
-    - descr: hello
-      cover: url(/myimg/beautiful/glory.jpg)
-    - descr: hello
-      cover: url(/myimg/beautiful/glory.jpg)
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
+

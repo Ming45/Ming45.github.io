@@ -6,4 +6,17 @@
 
 编辑themes\Butterfly\languages\zh-CN.yml文件
 
+新增source/css/myStyle.css文件
+
 新增source/js/Valine.min.js文件
+
+新增source/js/universe.js文件
+
+新增source/css/iconfont.css文件
+新增source/css/iconfont.tff文件
+
+修改[Blogroot]\themes\butterfly\layout\includes\mixins\post-ui.pug
+新建[Blogroot]\themes\butterfly\source\css\_index_card_style\slidecard.styl
+新建[Blogroot]\themes\butterfly\source\css\_index_card_style\multicard.styl
+修改[Blogroot]\themes\butterfly\source\css\_page\homepage.styl
+（就算改名也会冲突，最好删掉旧的！！！！！！！）

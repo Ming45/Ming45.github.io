@@ -18,15 +18,18 @@
   /* 首页文章卡片 */
   #recent-posts > .recent-post-item {
 	background: var(--trans-light);
-	border-radius: 25px;
-	border: var(--border-style);
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: 25px;
+    border: var(--border-style);
   }
-  
+
   /* 首页侧栏卡片 */
   #aside-content .card-widget {
 	background: var(--trans-light);
-	border-radius: 18px;
-	border: var(--border-style);
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: 18px;
+    border: var(--border-style);
+    padding: 20px;
   }
   
   /* 文章页、归档页、普通页面 */
@@ -115,14 +118,6 @@
 }
 
 
-/* 修复双栏显示bug*/
-/* 翻页按钮居中 */
-#pagination {
-  width: 100%;
-  margin: auto;
-}
-
-
 /*背景星光*/
 /* 背景宇宙星光  */
 #universe{
@@ -140,3 +135,51 @@
   /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
   z-index: -1;
 }
+
+/*白天主题下的配置*/
+#aside-content>.card-widget.card-info {
+    /*换成自己图片的地址*/
+    #background-image: url('/myimg/beautiful/blue_gril.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%
+}
+/*黑暗主题下的配置*/
+[data-theme=dark] #aside-content>.card-widget.card-info {
+    /*换成自己图片的地址*/
+    #background-image: url('/myimg/beautiful/blue_gril.jpg') !important
+}
+
+
+/* 全局宽度 参考:https://yisous.xyz/posts/d1fc759/ */
+.layout {
+  max-width: 1400px;
+}
+
+/* 侧边卡片栏宽度 */
+.aside-content {
+  max-width: 318px;
+  min-width: 300px;
+}
+
+/* 平板尺寸自适应(不启用侧边栏宽度限制) */
+@media screen and (max-width: 900px) {
+  .aside-content {
+    max-width: none !important;
+    padding: 0 5px 0 5px;
+  }
+}
+
+/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 
+#archive,
+#page,
+#category,
+#tag {
+  width: 100%;
+}
+.page:not(.page.home) .aside-content {
+  display: none;
+}*/
+
+/*#recent-posts > .recent-post-item .post_cover {
+  height: 240px !important;*/
